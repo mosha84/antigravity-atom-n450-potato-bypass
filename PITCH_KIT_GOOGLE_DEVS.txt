@@ -1,0 +1,54 @@
+================================================================================
+MOE MONEY PRODUCTION - GITHUB & GOOGLE DEVS PITCH KIT (EN / FR)
+Author: Mosha Brière (L'Ange-Gardien, QC)
+================================================================================
+
+STEP 1: ENGLISH PITCH (FOR GOOGLE / ANTIGRAVITY DEVS, X, LINKEDIN, GITHUB ISSUES)
+
+Subject / Headline:
+Bypassing "Your hardware is a potato" — Running Antigravity CLI on a 2010 Intel Atom N450 (1.66GHz, 1 Core, 2GB RAM) via User-Mode QEMU Haswell Translation
+
+Body:
+Hey @GoogleDevs / Antigravity CLI Team,
+
+Your hardware check told my 2010 HP Mini 5102 (Intel Atom N450 @ 1.66GHz, 1 core / 2 threads, 2GB RAM) "Your hardware is a potato" and crashed with "Illegal instruction (core dumped)" because the 2010 Pineview silicon physically lacks AVX, AVX2, PCLMULQDQ, and SSE4.2 instructions.
+
+I didn't have a USB thumb drive, a Computer Science degree (only Secondaire 3 / Grade 9 and zero IT courses), or a newer laptop—just 20 days (Oct 17 – Nov 6, 2026) and 102+ hours of non-stop terminal debugging.
+
+Here is how I forced Antigravity CLI to run and authenticate on a 16-year-old netbook:
+- Kernel-Level USB Spoofing: Booted the netbook with zero USB stick by mounting the ISO on a rooted 1st-gen Google Pixel via DriveDroid.
+- 150MB Idle OS Footprint: Installed 64-bit antiX Linux (systemd-free) to save ~1.8GB of my 2GB RAM ceiling for the AI runtime.
+- ELF Binary Isolation: Cleared "Exec format error" wrapper conflicts and isolated the true x86_64 ELF binary.
+- Live CPU Instruction Tunnel (agylaunch): Built a custom Bash wrapper around "qemu-x86_64 -cpu Haswell" to intercept modern vector instructions in software and translate them on the fly for the Atom N450.
+
+Authenticated and running live on November 6 at 12:43 AM (and celebrated 12 minutes later at 12:55 AM with a bilingual Quebec trap/drill track under MOE MONEY PRODUCTION).
+
+Full wrapper code and breakdown in my repo: https://github.com/mosha84/antigravity-atom-n450-potato-bypass
+
+Let me know when the Legacy Hardware Torture-Testing role opens up!
+
+— Mosha Brière (MOE MONEY PRODUCTION)
+L'Ange-Gardien, Québec, Canada
+
+
+STEP 2: MESSAGE EN FRANÇAIS (POUR LES RÉSEAUX, LINKEDIN OU LES DEVS)
+
+Titre :
+Contourner "Your hardware is a potato" — Faire rouler Antigravity CLI sur un Intel Atom N450 de 2010 (1.66 GHz, 1 cœur, 2 Go RAM) via QEMU Haswell User-Mode
+
+Message :
+Salut l'équipe Google / Antigravity CLI,
+
+Votre vérification matérielle a traité mon netbook HP Mini 5102 de 2010 (Intel Atom N450 @ 1.66 GHz, 1 cœur / 2 threads, 2 Go de RAM) de patate ("Your hardware is a potato") avec un crash fatal "Illegal instruction (core dumped)" à cause de l'absence physique des instructions AVX, AVX2, PCLMULQDQ et SSE4.2 sur le silicium de 2010.
+
+Avec seulement un Secondaire 3, zéro cours en informatique, aucune clé USB sous la main et plus de 102 heures d'acharnement dans le terminal (sur un projet de 20 jours, du 17 octobre au 6 novembre 2026 à 00h43), j'ai refusé d'abandonner :
+- Boot sans clé USB : Utilisation d'un Google Pixel (1re gén.) rooté avec DriveDroid pour tromper le BIOS et installer antiX Linux 64-bit (seulement 150-200 Mo de RAM au repos).
+- Débogage ELF : Résolution des erreurs "Exec format error" et isolation du vrai binaire x86_64.
+- Émulation CPU à la volée (agylaunch) : Création d'un wrapper Bash personnalisé utilisant "qemu-x86_64 -cpu Haswell" pour traduire en temps réel les instructions modernes pour l'Atom N450.
+
+Authentifié et fonctionnel le 6 novembre à 00h43 — et immortalisé 12 minutes plus tard à 00h55 en un morceau trap/drill bilingue québécois sous la bannière MOE MONEY PRODUCTION.
+
+Lien vers le code et le wrapper : https://github.com/mosha84/antigravity-atom-n450-potato-bypass
+
+— Mosha Brière (MOE MONEY PRODUCTION)
+L'Ange-Gardien, Québec, Canada
